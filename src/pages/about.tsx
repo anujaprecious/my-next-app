@@ -1,12 +1,10 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-import Link from "next/link";
-import ContactForm from "@/components/Contact/ContactForm";
+import styles from "@/styles/About.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <Head>
@@ -16,9 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <p>My Test</p>
-        <ContactForm />
-        <Link href="/contact">Contact</Link>
+        <p>My About page Test</p>
       </main>
     </>
   );
